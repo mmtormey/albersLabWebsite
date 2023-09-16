@@ -1,0 +1,766 @@
+html {
+  background-color: black;
+}
+
+body {
+  color: white;
+}
+
+.whole {
+  background: url('../images/background.png') no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.homeNav {
+  display: flex;
+  width: 95vw;
+  margin: 0 auto;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.navPagesContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.joinUs {
+  color: #000;
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.joinLink {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+
+.navItem {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+  background-size: 0% .1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.navLink:hover,
+.navLink:focus,
+.navLink:active {
+  background-size: 100% 0.1em;
+}
+
+.navJoinContainer p {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.navJoinContainer:hover p {
+  top: -9px;
+}
+
+.firstScreen {
+  display: flex;
+  flex-direction: row;
+  gap: 92px;
+  margin-left: 92px;
+  margin-top: 36px;
+  align-items: center;
+}
+
+.introduction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+h1 {
+  font-family: Epilogue;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.introParagraph {
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%;
+  width: 532px;
+  margin: 0;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 58px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 130px;
+  background: #1E2560;
+  background-size: 400%;
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  border: none;
+}
+
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #6100FF 18.59%, #3045FF 100%);
+  transition: all 0.475s;
+}
+
+.spinningBrain {
+  height: 500px;
+  width: 500px;
+}
+
+.secondScreen {
+  height: 100vh;
+}
+
+.secondScreenContainer {
+  position: relative;
+}
+
+.neurons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: auto;
+  width: 75%;
+}
+
+.text-container {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 18rem;
+  top: 2rem;
+  background-color: rgb(41, 41, 41, 0.8);
+  padding: 0 1rem;
+}
+
+.aboutParagraph {
+  font-family: Epilogue;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 163%;
+  text-align: center;
+}
+
+
+.thirdScreen {
+  height: 100vh;
+}
+
+.labBoxes {
+  min-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+  gap: 26px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: Epilogue;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.8px;
+}
+
+.LabBox {
+  display: flex;
+  width: 646px;
+  flex-grow: 1;
+  padding: 32px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background-color: #0F1327;
+}
+
+.openDescription {
+  display: flex;
+  width: fit-content;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 67px;
+  padding-right: 67px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 130px;
+  border: none;
+  background: #1E2560;
+}
+
+.descriptionOnClick {
+  display: none;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+}
+
+.closeDescription {
+  display: flex;
+  width: fit-content;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 80px;
+  padding-right: 80px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 130px;
+  border: none;
+  background: #1E2560;
+  color: white;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+
+.fourthScreen {
+  height: 100vh;
+  text-align: center;
+}
+
+.diagramFirstRow {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.diagramSecondRow {
+  display: flex;
+  margin-left: 230px;
+  margin-right: 100px;
+}
+
+.diagramArrowRow {
+  display: flex;
+  gap: 169px;
+  margin-left: 371px;
+  margin-right: 100px;
+}
+
+.diagramText {
+  fill: #FFFFFF;
+  text-align: center;
+  font-family: Epilogue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.diagramTextRed {
+  fill: #FF2626;
+  text-align: center;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.interventionColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.diagramTextSmall {
+  fill: white;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.hoverIcon:hover {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+  transition: all ease-in-out 20ms;
+}
+
+
+.scrollSectionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.projectsHeader {
+  color: white;
+}
+
+.headerAndButton {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+
+.arrowButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.rightArrow,
+.leftArrow {
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  background: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+H2 {
+  font-family: Epilogue;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48.8px;
+}
+
+.learnMore {
+  color: white;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 130px;
+  border: none;
+  background: #1E2560;
+}
+
+.projectsScroller {
+  margin-left: 100px;
+}
+
+
+.project {
+  position: relative;
+  color: white;
+  margin-left: 24px;
+  overflow: hidden;
+}
+
+.projectLabel {
+  position: absolute;
+  font-family: Epilogue;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0;
+  height: 457px;
+  width: 372px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.04%, rgba(0, 0, 0, 0.70) 82.13%);
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.projectLabelText {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
+.project .projectLabel:hover {
+  opacity: 1;
+}
+
+.project .projectLabel .projectLabelText {
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+}
+
+.fifthScreen {
+  height: 100vh;
+}
+
+.bottomSection {
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+}
+
+.sixthScreen {
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.eventHeader {
+  color: #000000;
+}
+
+.rightArrowDark,
+.leftArrowDark {
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.eventsSlider {
+  margin-left: 100px;
+}
+
+.event {
+  position: relative;
+  color: white;
+  margin-left: 24px;
+  overflow: hidden;
+}
+
+.eventLabel {
+  position: absolute;
+  font-family: Epilogue;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.04%, rgba(0, 0, 0, 0.70) 82.13%);
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.eventLabelText {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
+.event .eventLabel:hover {
+  opacity: 1;
+}
+
+.event .eventLabel .eventLabelText {
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+}
+
+.footer {
+  color: #1E2560;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.backgroundDots {
+  position: relative;
+  top: -67px;
+  background-image: url('../images/lightBackgroundDots.svg');
+  height: 321px;
+}
+
+.footerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.phone {
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.email {
+  padding-bottom: 24px;
+}
+
+.twitter {
+  padding-right: 32px;
+}
+
+.contactIcon {
+  height: 41.325px;
+  width: 41.325px;
+}
+
+.contactText {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 238px;
+}
+
+.footerNavContainer {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding-bottom: 10px;
+}
+
+.footerNavPagesContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.footerJoinUs {
+  color: #FFFFFF;
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #1E2560;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footerJoinLink {
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+
+.footerNavItem {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+
+.footerNavLink {
+  color: #000000;
+  text-decoration: none;
+  background-image: linear-gradient(#000000, #000000);
+  background-size: 0% .1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.footerNavLink:hover,
+.footerNavLink:focus,
+.footerNavLink:active {
+  background-size: 100% 0.1em;
+}
+
+.footerNavJoinContainer p {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.footerNavJoinContainer:hover p {
+  top: -9px;
+}
+
+.footerLine {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.line {
+  color: #1E2560;
+}
+
+.signatureRow {
+  width: 100%;
+}
+
+.signature {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.signature p {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.name {
+  text-decoration-line: underline;
+}
+
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+} */
+
+/* .carousel {
+  position: relative;
+  height: 536px;
+  margin: 0 auto;
+}
+
+.carousel-content {
+  position: relative;
+  overflow-x: hidden;
+  transition: width .4s;
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: left .4s cubic-bezier(.47, .13, .15, .89);
+} */

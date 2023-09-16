@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albers Lab Homepage</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+
+
+</head>
+
+<body>
+  <div class="whole">
+    <nav class="homeNav">
+      <div class="logoContainer">
+        <a class="logo" href="#">
+          <p>LOGO</p>
+        </a>
+      </div>
+      <div class="navContainer">
+        <div class="navPagesContainer">
+          <a href="#" class="navLink">
+            <p class="navItem">Team</p>
+          </a>
+          <a href="#" class="navLink">
+            <p class="navItem">Projects</p>
+          </a>
+          <a href="#" class="navLink">
+            <p class="navItem">Media</p>
+          </a>
+          <a href="#" class="navLink">
+            <p class="navItem">Clinic</p>
+          </a>
+        </div>
+        <div class="navJoinContainer">
+          <a href="#" class="joinLink">
+            <p class="joinUs">Join Us</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="firstScreen">
+      <div class="spinningBrain">
+        <img class="spinningBrain" src="images/brainVideo-PLACEHOLDER.png" />
+      </div>
+      <div class="introduction">
+        <h1 class="title">Albers Lab</h1>
+        <p class="introParagraph">Combining chemical biology, genetic, and computational approaches cultured human
+          neural
+          cells and mouse models to elucidate mechanistic insights into disease pathogenesis.</p>
+        <button class="button startScroll">
+          <span class="button-content">Learn More</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="secondScreen">
+      <div class="secondScreenContainer">
+        <div class="neurons">
+          <img class="neuronLeft" src="images/accurate-nueron-left.png" />
+          <img class="neuronRight" src="images/accurate-nueron-right.png" />
+        </div>
+        <div class="about">
+          <p class="aboutParagraph">In the Albers lab, we combine chemical biology, genetic, and computational
+            approaches
+            cultured human neural cells and mouse models to elucidate mechanistic insights into neurodegenerative
+            disease
+            pathogenesis. We validate these insights in human brain tissue and electronic health record databases. We
+            translate validated insights by developing biomarkers and therapeutics that advance precision medicine
+            approaches to neurologic disease.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdScreen">
+      <div class="labBoxes">
+        <div class="LabBox">
+          <img id="OFN_icon" src="images/OFN_icon.svg" />
+          <h3>Laboratory of Olfactory Neurotranslation</h3>
+          <button id="OFN_open_button" class="button openDescription">
+            <span class="button-content"><img src="images/downArrow.svg"></span>
+          </button>
+          <div id="OFNDetails" class="descriptionOnClick">
+            <div class="description">
+              <p>In the Laboratory of Olfactory Neurotranslation (LOON), inspired by mouse models of inflammatory
+                olfactory
+                dysfunction, we develop novel at home clinical smell tests to quantify olfactory function and develop
+                algorithms to predict neurodegenerative disease, such as Alzheimer’s disease, Dementia with Lewy Body,
+                and
+                Chronic Traumatic Encephalopathy, and accelerate recovery of smell function following COVID infections
+                and
+                Traumatic Brain Injury. These biomarkers can serve as early screening tools and provide primary or
+                secondary
+                outcomes in clinical trials of patients with these diseases.</p>
+              <button id="OFN_close_button" class="button closeDescription">
+                <span class="button-content">Close</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="LabBox">
+          <img id="NTS_icon" src="images/NTS_icon.svg" />
+          <h3>Laboratory of Neurologic Therapeutic Science</h3>
+          <button id="NTS_open_button" class="button openDescription">
+            <span class="button-content"><img src="images/downArrow.svg"></span>
+          </button>
+          <div id="NTSDetails" class="descriptionOnClick">
+            <div class="description">
+              <p>In the Laboratory of Neurologic Therapeutic Science (LONTS), we combine in vitro human neural cell
+                systems,
+                mouse lines, and autopsied human brains as model systems of disease with computational approaches
+                including
+                machine learning and multiplexed imaging with spatial transcriptomics to elucidate mechanisms of
+                neurodegeneration. We prosecute candidate drug targets and generate candidate biomarkers for validation
+                in
+                human clinical trials using systems pharmacology approaches of FDA-approved, experimental, and novel
+                drugs.
+                In
+                parallel, we emulate clinical trials in multiple electronic health record datasets to validate
+                FDA-approved
+                “hits” emerging from our laboratory and computational discovery efforts.</p>
+              <button id="NTS_close_button" class="button closeDescription">
+                <span class="button-content">Close</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fourthScreen">
+      <h2>Neurodegenerative Disease Progression</h2>
+      <div class="diagramFirstRow">
+        <svg width="211" height="211" viewBox="0 0 211 211" fill="none" class="hoverSVG" id="healthyBrainHover">
+          <circle cx="105.5" cy="105.5" r="105" stroke="url(#paint0_linear_90_377)" fill="#FFFFFF1A" />
+          <circle cx="105.5" cy="105.5" r="105" stroke="url(#paint1_linear_90_377)" fill="none" />
+          <circle cx="105.5" cy="105.5" r="105" fill="url(#healthyBrain)" class="imageCircle hidden" />
+          <defs>
+            <linearGradient id="paint0_linear_90_377" x1="2.02212e-07" y1="93.7778" x2="211.001" y2="93.9366"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.185851" stop-color="#6100FF" />
+              <stop offset="1" stop-color="#3045FF" />
+            </linearGradient>
+            <linearGradient id="paint1_linear_90_377" x1="228" y1="205" x2="105.5" y2="211"
+              gradientUnits="userSpaceOnUse">
+              <stop />
+              <stop offset="1" stop-opacity="0" />
+            </linearGradient>
+            <pattern id="healthyBrain" height="100%" width="100%" viewBox="0 0 211 211">
+              <image x="7.5%" y="7.5%" width="85%" height="85%" href="images/healthyBrain.png" />
+            </pattern>
+          </defs>
+          <text class="diagramText" x="105.5" y="94.5" text-anchor="middle" fill="white" stroke-width="1px"
+            alignment-baseline="middle">
+            Healthy
+          </text>
+          <text class="diagramText" x="105.5" y="116.5" text-anchor="middle" fill="white" stroke-width="1px"
+            alignment-baseline="middle">
+            Brain
+          </text>
+        </svg>
+
+        <svg width="79" height="16" viewBox="0 0 79 16" fill="none">
+          <path
+            d="M78.7071 8.70723C79.0976 8.3167 79.0976 7.68354 78.7071 7.29302L72.3431 0.929054C71.9526 0.53853 71.3195 0.53853 70.9289 0.929054C70.5384 1.31958 70.5384 1.95274 70.9289 2.34327L76.5858 8.00012L70.9289 13.657C70.5384 14.0475 70.5384 14.6807 70.9289 15.0712C71.3195 15.4617 71.9526 15.4617 72.3431 15.0712L78.7071 8.70723ZM0 9.00012H78V7.00012H0V9.00012Z"
+            fill="white" fill-opacity="0.35" />
+        </svg>
+
+        <svg width="213" height="213" viewBox="0 0 213 213" fill="none" class="hoverSVG">
+          <circle cx="106.5" cy="106.5" r="105" transform="rotate(96.8763 106.5 106.5)"
+            stroke="url(#paint0_linear_90_383)" fill="#FFFFFF1A" />
+          <circle cx="106.5" cy="106.5" r="105" transform="rotate(96.8763 106.5 106.5)"
+            stroke="url(#paint1_linear_90_383)" />
+          <circle cx="105.5" cy="105.5" r="105" fill="url(#dna)" class="imageCircle hidden" />
+          <defs>
+            <linearGradient id="paint0_linear_90_383" x1="0.999909" y1="94.7778" x2="212.001" y2="94.9366"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.185851" stop-color="#6100FF" />
+              <stop offset="1" stop-color="#3045FF" />
+            </linearGradient>
+            <linearGradient id="paint1_linear_90_383" x1="229" y1="206" x2="106.5" y2="212"
+              gradientUnits="userSpaceOnUse">
+              <stop />
+              <stop offset="1" stop-opacity="0" />
+            </linearGradient>
+            <pattern id="dna" height="100%" width="100%" viewBox="0 0 211 211">
+              <image x="7.5%" y="7.5%" width="85%" height="85%" href="images/dna.png" />
+            </pattern>
+          </defs>
+          <text class="diagramText" x="105.5" y="94.5" text-anchor="middle" fill="white" stroke-width="1px"
+            alignment-baseline="middle">
+            Cytoplasmic
+          </text>
+          <text class="diagramText" x="105.5" y="116.5" text-anchor="middle" fill="white" stroke-width="1px"
+            alignment-baseline="middle">
+            dsRNA
+          </text>
+        </svg>
+
+        <svg width="79" height="16" viewBox="0 0 79 16" fill="none">
+          <path
+            d="M78.7071 8.70723C79.0976 8.3167 79.0976 7.68354 78.7071 7.29302L72.3431 0.929054C71.9526 0.53853 71.3195 0.53853 70.9289 0.929054C70.5384 1.31958 70.5384 1.95274 70.9289 2.34327L76.5858 8.00012L70.9289 13.657C70.5384 14.0475 70.5384 14.6807 70.9289 15.0712C71.3195 15.4617 71.9526 15.4617 72.3431 15.0712L78.7071 8.70723ZM0 9.00012H78V7.00012H0V9.00012Z"
+            fill="white" fill-opacity="0.35" />
+        </svg>
+
+        <svg width="213" height="213" viewBox="0 0 213 213" fill="none" class="hoverSVG">
+          <circle cx="106.5" cy="106.5" r="105" transform="rotate(172.186 106.5 106.5)"
+            stroke="url(#paint0_linear_90_386)" fill="#FFFFFF1A" />
+          <circle cx="106.5" cy="106.5" r="105" transform="rotate(172.186 106.5 106.5)"
+            stroke="url(#paint1_linear_90_386)" />
+          <circle cx="105.5" cy="105.5" r="105" fill="url(#neuroResponse)" class="imageCircle hidden" />
+          <defs>
+            <linearGradient id="paint0_linear_90_386" x1="0.999687" y1="94.7777" x2="212.001" y2="94.9365"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.185851" stop-color="#6100FF" />
+              <stop offset="1" stop-color="#3045FF" />
+            </linearGradient>
+            <linearGradient id="paint1_linear_90_386" x1="229" y1="206" x2="106.5" y2="212"
+              gradientUnits="userSpaceOnUse">
+              <stop />
+              <stop offset="1" stop-opacity="0" />
+            </linearGradient>
+            <pattern id="neuroResponse" height="100%" width="100%" viewBox="0 0 211 211">
+              <image x="-1%" y="-1%" width="102%" height="102%" href="images/neuroResponse.png" />
+            </pattern>
+          </defs>
+          <text class="diagramText" x="105.5" y="83.5" text-anchor="middle" fill="white" stroke-width="1px"
+            alignment-baseline="middle">
+            dsRNA-mediated
+          </text>
+          <text class="diagramText" x="105.5" y="105.5" text-anchor="middle" fill="white" stroke-width="1px"
+            alignment-baseline="middle">
+            Neuroinflammation
+          </text>
+          <text class="diagramText" x="105.5" y="127.5" text-anchor="middle" fill="white" stroke-width="1px"
+            alignment-baseline="middle">
+            Response
+          </text>
+        </svg>
+        <div class="interventionColumn">
+          <svg width="215" height="104" fill="none">
+            <rect x="0" y="0" width="215" height="104" fill="#1652F0" />
+            <text class="diagramText" x="107.5" y="20" text-anchor="middle" fill="white" stroke-width="1px"
+              alignment-baseline="middle">
+              Astrocytosis
+            </text>
+            <text class="diagramText" x="107.5" y="41" text-anchor="middle" fill="white" stroke-width="1px"
+              alignment-baseline="middle">
+              Microgliosis
+            </text>
+            <text class="diagramText" x="107.5" y="62" text-anchor="middle" fill="white" stroke-width="1px"
+              alignment-baseline="middle">
+              Amyloid Deposition
+            </text>
+            <text class="diagramText" x="107.5" y="83" text-anchor="middle" fill="white" stroke-width="1px"
+              alignment-baseline="middle">
+              Hyperphosphorylate Tau
+            </text>
+          </svg>
+          <svg width="173" height="16" viewBox="0 0 173 16" fill="none">
+            <path
+              d="M172.707 8.70723C173.098 8.3167 173.098 7.68354 172.707 7.29302L166.343 0.929054C165.953 0.53853 165.319 0.53853 164.929 0.929054C164.538 1.31958 164.538 1.95274 164.929 2.34327L170.586 8.00012L164.929 13.657C164.538 14.0475 164.538 14.6807 164.929 15.0712C165.319 15.4617 165.953 15.4617 166.343 15.0712L172.707 8.70723ZM0 9.00012H172V7.00012H0V9.00012Z"
+              fill="white" fill-opacity="0.35" />
+          </svg>
+          <svg width="174" height="62.5" viewBox="0 0 174 62.5" fill="none">
+            <path d="M2 14.0001L174 14.0001" stroke="#FF2626" stroke-width="4" />
+            <path d="M2 0.00012207L2 27.0001" stroke="#FF2626" stroke-width="4" />
+            <text class="diagramTextRed" x="87" y="40.5" text-anchor="middle" stroke-width="1px"
+              alignment-baseline="middle">
+              Therapeutic Intervention
+            </text>
+          </svg>
+        </div>
+
+        <svg width="211" height="211" viewBox="0 0 211 211" fill="none" class="hoverSVG">
+          <circle cx="105.5" cy="105.5" r="105" transform="rotate(-138.245 105.5 105.5)"
+            stroke="url(#paint0_linear_90_380)" fill="#FFFFFF1A" />
+          <circle cx="105.5" cy="105.5" r="105" transform="rotate(-138.245 105.5 105.5)"
+            stroke="url(#paint1_linear_90_380)" />
+          <circle cx="105.5" cy="105.5" r="105" fill="url(#badBrain)" class="imageCircle hidden" />
+          <defs>
+            <linearGradient id="paint0_linear_90_380" x1="-0.000449932" y1="93.7778" x2="211" y2="93.9365"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.185851" stop-color="#6100FF" />
+              <stop offset="1" stop-color="#3045FF" />
+            </linearGradient>
+            <linearGradient id="paint1_linear_90_380" x1="228" y1="205" x2="105.5" y2="211"
+              gradientUnits="userSpaceOnUse">
+              <stop />
+              <stop offset="1" stop-opacity="0" />
+            </linearGradient>
+            <pattern id="badBrain" height="100%" width="100%" viewBox="0 0 211 211">
+              <image x="7.5%" y="7.5%" width="85%" height="85%" href="images/badBrain.png" />
+            </pattern>
+          </defs>
+          <text class="diagramText" x="105.5" y="94.5" text-anchor="middle" alignment-baseline="middle">
+            Neurodegeneration
+          </text>
+          <text class="diagramText" x="105.5" y="116.5" text-anchor="middle" alignment-baseline="middle">
+            (AD, ALS, FTD)
+          </text>
+        </svg>
+      </div>
+      <div class="diagramArrowRow">
+        <svg width="31" height="28" viewBox="0 0 31 28" fill="none">
+          <path
+            d="M30.4286 2.06545C30.4647 1.51435 30.0473 1.03829 29.4962 1.00214L20.5155 0.413083C19.9644 0.376937 19.4883 0.794389 19.4522 1.34549C19.416 1.89659 19.8335 2.37265 20.3846 2.4088L28.3674 2.9324L27.8438 10.9152C27.8077 11.4663 28.2251 11.9424 28.7762 11.9786C29.3273 12.0147 29.8034 11.5973 29.8395 11.0462L30.4286 2.06545ZM1.65931 27.6825L30.09 2.75187L28.7714 1.24813L0.34069 26.1788L1.65931 27.6825Z"
+            fill="white" fill-opacity="0.35" />
+        </svg>
+        <svg width="31" height="28" viewBox="0 0 31 28" fill="none">
+          <path
+            d="M0.00214322 2.06545C-0.0340027 1.51435 0.383449 1.03829 0.934548 1.00214L9.91525 0.413083C10.4664 0.376937 10.9424 0.794389 10.9786 1.34549C11.0147 1.89659 10.5973 2.37265 10.0462 2.4088L2.06331 2.9324L2.58691 10.9152C2.62306 11.4663 2.20561 11.9424 1.65451 11.9786C1.10341 12.0147 0.62735 11.5973 0.591201 11.0462L0.00214322 2.06545ZM28.7714 27.6825L0.34069 2.75187L1.65931 1.24813L30.09 26.1788L28.7714 27.6825Z"
+            fill="white" fill-opacity="0.35" />
+        </svg>
+      </div>
+      <div class="diagramSecondRow">
+        <svg width="184" height="178" viewBox="0 0 184 178" fill="none">
+          <circle cx="92.5" cy="60.5" r="60" fill="#FFFFFF1A" />
+          <image href="images/genomicInstabilityIcon.svg" x="53" y="21" class="hoverIcon" />
+          <text class="diagramTextSmall" x="92" y="148" text-anchor="middle" alignment-baseline="middle">
+            Genomic Instability
+          </text>
+          <text class="diagramTextSmall" x="92" y="170" text-anchor="middle" alignment-baseline="middle">
+            Due to Aging
+          </text>
+        </svg>
+        <svg width="130" height="240" viewBox="0 0 130 240" fill="none">
+          <!-- <svg width="16" height="39" viewBox="0 0 16 39" fill="none"> -->
+          <path
+            d="M8.70711 0.293087C8.31658 -0.097435 7.68342 -0.097435 7.29289 0.293087L0.928932 6.65705C0.538408 7.04757 0.538408 7.68074 0.928932 8.07126C1.31946 8.46179 1.95262 8.46179 2.34315 8.07126L8 2.41441L13.6569 8.07126C14.0474 8.46179 14.6805 8.46179 15.0711 8.07126C15.4616 7.68074 15.4616 7.04757 15.0711 6.65705L8.70711 0.293087ZM9 38.8135L9 1.00019H7L7 38.8135H9Z"
+            fill="white" fill-opacity="0.35" transform="translate(65, 0)" />
+          <!-- </svg> -->
+          <circle cx="70.5" cy="122.5" r="60" fill="#FFFFFF1A" />
+          <image href="images/virusIcon.svg" x="33" y="87" class="hoverIcon" />
+          <!-- <image href="images/virusIcon.svg" x="25%" y="22.5%" height="60%" width="55%" class="hoverIcon" /> -->
+          <text class="diagramTextSmall" x="65" y="210" text-anchor="middle" alignment-baseline="middle">
+            Viruses Or Viral
+          </text>
+          <text class="diagramTextSmall" x="65" y="232" text-anchor="middle" alignment-baseline="middle">
+            Reactivations
+          </text>
+        </svg>
+        <svg width="184" height="178" viewBox="0 0 184 178" fill="none">
+          <circle cx="92.5" cy="60.5" r="60" fill="#FFFFFF1A" />
+          <image href="images/transposableElementsIcon.svg" x="46" y="39" class="hoverIcon" />
+          <text class="diagramTextSmall" x="92" y="148" text-anchor="middle" alignment-baseline="middle">
+            Transposable
+          </text>
+          <text class="diagramTextSmall" x="92" y="170" text-anchor="middle" alignment-baseline="middle">
+            Elements
+          </text>
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="fifthScreen">
+      <div class="scrollSectionHeader projectsHeader">
+        <div class="headerAndButton">
+          <h2>Projects</h2>
+          <button class="learnMore">Learn More</button>
+        </div>
+        <div class="arrowButtons">
+          <div class="nav-left">
+            <button class="leftArrow" id="projectLeftArrow">
+              <img src="images/leftArrow.svg" />
+            </button>
+          </div>
+          <div class="nav-right">
+            <button class="rightArrow" id="projectRightArrow">
+              <img src="images/rightArrow.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectsScroller">
+        <div class="project">
+          <img class="projectImage" src="/images/mouseOlfactoryEpithelium.jpg" width="372px" height="457px" />
+          <div class="projectLabel">
+            <p class=projectLabelText>Mouse Olfactory Epithelium</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/images/humanOlfactoryBulb.jpg" width="372px" height="457px" />
+          <div class="projectLabel">
+            <p class="projectLabelText">Human Olfactory Bulb</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/images/mouseOlfactoryBulb.jpg" width="372px" height="457px" />
+          <div class="projectLabel">
+            <p class="projectLabelText">Mouse Olfactory Bulb</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/images/mouseOlfactoryBulb.jpg" width="372px" height="457px" />
+          <div class="projectLabel">
+            <p class="projectLabelText">dsRNA-mediated Death in Differentiated Human Neural Cells</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="bottomSection">
+      <div class="sixthScreen">
+        <div class="scrollSectionHeader eventHeader">
+          <div class="headerAndButton">
+            <h2>Events</h2>
+            <button class="learnMore">Meet the Team</button>
+          </div>
+          <div class="arrowButtons">
+            <div class="nav-left">
+              <button id="teamLeftButton" class="leftArrowDark">
+                <img src="images/leftArrowDark.svg" />
+              </button>
+            </div>
+            <div class="nav-right">
+              <button id="teamRightButton" class="rightArrowDark">
+                <img src="images/rightArrowDark.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="eventsSlider">
+          <div class="event">
+            <img class="eventImage" src="/images/event1.png" height="536px" width="873px" />
+            <div class="eventLabel" height="536px" width="873px">
+              <p class="eventLabelText">Albers Lab members posing in front of Harvard Medical School</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/event2.png" height="536px" width="413px" />
+            <div class="eventLabel" height="536px" width="413px">
+              <p class="eventLabelText">Alysa and Sasha presenting data for the Long COVID smell test in Chelsea, MA</p>
+            </div>
+          </div>
+          <div class="event" height="536px" width="873">
+            <img class="eventImage" src="/images/event3.png" height="536px" width="873" />
+            <div class="eventLabel">
+              <p class="eventLabelText">Laura presenting her poster at Keystone 2023</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/event4.png" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Albers Lab members at MGH holiday party</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a class="logo" href="#">
+          <p>LOGO</p>
+        </a>
+        <div class="footerRow">
+          <div class="contactGrid">
+            <div class="contactItem phone">
+              <img class="contactIcon" src="/images/phoneIcon.svg" />
+              <p class="contactText">(617) 724 7401</p>
+            </div>
+            <div class="contactItem email">
+              <img class="contactIcon" src="/images/emailIcon.svg" />
+              <p class="contactText">albers.mark@mgh.harvard.edu</p>
+            </div>
+            <div class="contactItem twitter">
+              <img class="contactIcon" src="/images/twitterIcon.svg" />
+              <p class="contactText">TwitterUserName</p>
+            </div>
+            <div class="contactItem address">
+              <img class="contactIcon" src="/images/addressIcon.svg" />
+              <p class="contactText">114 16th Street, Suite 2003, Charlestown, MA 02129</p>
+            </div>
+          </div>
+          <div class="footerNavContainer">
+            <div class="footerNavPagesContainer">
+              <a href="#" class="footerNavLink">
+                <p class="footerNavItem">Team</p>
+              </a>
+              <a href="#" class="footerNavLink">
+                <p class="footerNavItem">Projects</p>
+              </a>
+              <a href="#" class="footerNavLink">
+                <p class="footerNavItem">Media</p>
+              </a>
+              <a href="#" class="footerNavLink">
+                <p class="footerNavItem">Clinic</p>
+              </a>
+            </div>
+            <div class="footerNavJoinContainer">
+              <a href="#" class="footerJoinLink">
+                <p class="footerJoinUs">Join Us</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footerLine">
+          <hr class="line" />
+        </div>
+        <div class="signature">
+          <p>Website Designed By </p>
+          <p class="name">Alyssa DeFilippis</p>
+          <p> & Developed by </p>
+          <p class="name">Megan Tormey</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="scripts/homepage.js" defer></script>
+  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+</body>
+
+</html>
