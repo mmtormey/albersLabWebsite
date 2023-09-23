@@ -7,13 +7,29 @@ body {
 }
 
 .whole {
-  background: url('../images/background.png') no-repeat;
+  background: url('../images/background2.png') no-repeat;
   background-attachment: fixed;
   height: 100%;
 }
 
 .hidden {
   display: none;
+}
+
+.appearFullSection {
+  opacity: 0;
+  /* transform: translateY(5%); */
+  transition: opacity .5s ease-out;
+  /* transition: opacity .5s ease-out, transform .5s ease-out; */
+}
+
+.appearFullSection.show {
+  opacity: 1;
+  /* transform: translateY(0); */
+}
+
+.firstScreen {
+  height: 100vh;
 }
 
 .homeNav {
@@ -102,7 +118,7 @@ body {
   top: -9px;
 }
 
-.firstScreen {
+.firstScreenContent {
   display: flex;
   flex-direction: row;
   gap: 92px;
@@ -158,6 +174,7 @@ h1 {
   letter-spacing: 1.35px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 
@@ -184,6 +201,8 @@ h1 {
   transition: all 0.475s;
 }
 
+
+
 .spinningBrain {
   height: 500px;
   width: 500px;
@@ -209,7 +228,7 @@ h1 {
   right: 0;
   top: 30%;
   margin: auto;
-  width: 75%;
+  width: 64%;
 }
 
 .text-container {
@@ -223,7 +242,7 @@ h1 {
 
 .aboutParagraph {
   font-family: Epilogue;
-  font-size: 25px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 163%;
@@ -232,15 +251,18 @@ h1 {
 
 
 .thirdScreen {
-  height: 100vh;
+  min-height: fit-content;
+  height: 120vh;
+  display: flex;
+  text-align: center;
 }
 
 .labBoxes {
-  min-height: fit-content;
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin: auto;
-  width: 80%;
+  width: 90%;
   gap: 26px;
 }
 
@@ -255,6 +277,7 @@ h3 {
 }
 
 .LabBox {
+  height: fit-content;
   display: flex;
   width: 646px;
   flex-grow: 1;
@@ -263,6 +286,11 @@ h3 {
   align-items: center;
   gap: 32px;
   background-color: #0F1327;
+  opacity: .8;
+}
+
+.labBoxTitle {
+  margin: 0;
 }
 
 .openDescription {
@@ -273,7 +301,7 @@ h3 {
   padding-left: 67px;
   padding-right: 67px;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
   border-radius: 130px;
   border: none;
   background: #1E2560;
@@ -287,7 +315,18 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 65px;
+  gap: 32px;
+}
+
+.descriptionText {
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+
 }
 
 .closeDescription {
@@ -343,7 +382,7 @@ h3 {
   fill: #FFFFFF;
   text-align: center;
   font-family: Epilogue;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
@@ -353,7 +392,7 @@ h3 {
   fill: #FF2626;
   text-align: center;
   font-family: Epilogue;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
@@ -369,7 +408,7 @@ h3 {
 .diagramTextSmall {
   fill: white;
   font-family: Epilogue;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
@@ -410,13 +449,21 @@ h3 {
 
 .rightArrow,
 .leftArrow {
+  position: relative;
   border-radius: 50%;
+  height: 52px;
+  width: 52px;
   border: 1px solid #FFFFFF;
   background: none;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.leftArrowImage,
+.rightArrowImage {
+  position: absolute;
+  left: 12px;
+  top: 17px;
+
 }
 
 H2 {
@@ -427,39 +474,23 @@ H2 {
   line-height: 48.8px;
 }
 
-.learnMore {
-  color: white;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 1.35px;
-  text-transform: uppercase;
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  align-items: center;
-  gap: 40px;
-  border-radius: 130px;
-  border: none;
-  background: #1E2560;
-}
-
 .projectsScroller {
   margin-left: 100px;
 }
 
 
-.project {
+.project,
+.projectVid {
   position: relative;
   color: white;
   margin-left: 24px;
   overflow: hidden;
+}
+
+.vid {
+  width: 372px;
+  height: 457px;
+  object-fit: fill;
 }
 
 .projectLabel {
@@ -491,7 +522,16 @@ H2 {
   opacity: 1;
 }
 
+.projectVid .projectLabel:hover {
+  opacity: 1;
+}
+
 .project .projectLabel .projectLabelText {
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+}
+
+.projectVid .projectLabel .projectLabelText {
   transition-delay: 0s;
   transition-duration: 0.4s;
 }
@@ -516,13 +556,13 @@ H2 {
 
 .rightArrowDark,
 .leftArrowDark {
+  position: relative;
   border-radius: 50%;
+  height: 52px;
+  width: 52px;
   border: 1px solid #000000;
   background: none;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .eventsSlider {
@@ -534,6 +574,10 @@ H2 {
   color: white;
   margin-left: 24px;
   overflow: hidden;
+}
+
+.eventImage {
+  object-fit: cover;
 }
 
 .eventLabel {
@@ -606,6 +650,10 @@ H2 {
   align-items: center;
 }
 
+.contactItem:hover {
+  transform: scale(1.025);
+}
+
 .phone {
   padding-right: 32px;
   padding-bottom: 24px;
@@ -631,6 +679,11 @@ H2 {
   font-weight: 500;
   line-height: normal;
   max-width: 238px;
+}
+
+.contactTextLink {
+  color: #1E2560;
+  text-decoration: none;
 }
 
 .footerNavContainer {
@@ -738,29 +791,3 @@ H2 {
 .name {
   text-decoration-line: underline;
 }
-
-/* *,
-*:before,
-*:after {
-  box-sizing: border-box;
-} */
-
-/* .carousel {
-  position: relative;
-  height: 536px;
-  margin: 0 auto;
-}
-
-.carousel-content {
-  position: relative;
-  overflow-x: hidden;
-  transition: width .4s;
-  height: 100%;
-}
-
-.slide {
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  transition: left .4s cubic-bezier(.47, .13, .15, .89);
-} */

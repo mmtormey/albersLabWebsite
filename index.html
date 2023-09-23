@@ -7,97 +7,98 @@
   <title>Albers Lab Homepage</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="slick/slick.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&family=Inter:wght@500;700&display=swap"
+    rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
 
 
 </head>
 
 <body>
   <div class="whole">
-    <nav class="homeNav">
-      <div class="logoContainer">
-        <a class="logo" href="#">
-          <p>LOGO</p>
-        </a>
-      </div>
-      <div class="navContainer">
-        <div class="navPagesContainer">
-          <a href="#" class="navLink">
-            <p class="navItem">Team</p>
-          </a>
-          <a href="#" class="navLink">
-            <p class="navItem">Projects</p>
-          </a>
-          <a href="#" class="navLink">
-            <p class="navItem">Media</p>
-          </a>
-          <a href="#" class="navLink">
-            <p class="navItem">Clinic</p>
-          </a>
-        </div>
-        <div class="navJoinContainer">
-          <a href="#" class="joinLink">
-            <p class="joinUs">Join Us</p>
-          </a>
-        </div>
-      </div>
-    </nav>
-
     <div class="firstScreen">
-      <div class="spinningBrain">
-        <img class="spinningBrain" src="images/brainVideo-PLACEHOLDER.png" />
-      </div>
-      <div class="introduction">
-        <h1 class="title">Albers Lab</h1>
-        <p class="introParagraph">Combining chemical biology, genetic, and computational approaches cultured human
-          neural
-          cells and mouse models to elucidate mechanistic insights into disease pathogenesis.</p>
-        <button class="button startScroll">
-          <span class="button-content">Learn More</span>
-        </button>
+      <nav class="homeNav">
+        <div class="logoContainer">
+          <a class="logo" href="#">
+            <p>LOGO</p>
+          </a>
+        </div>
+        <div class="navContainer">
+          <div class="navPagesContainer">
+            <a href="#" class="navLink">
+              <p class="navItem">Team</p>
+            </a>
+            <a href="#" class="navLink">
+              <p class="navItem">Projects</p>
+            </a>
+            <a href="#" class="navLink">
+              <p class="navItem">Media</p>
+            </a>
+            <a href="#" class="navLink">
+              <p class="navItem">Clinic</p>
+            </a>
+          </div>
+          <div class="navJoinContainer">
+            <a href="#" class="joinLink">
+              <p class="joinUs">Join Us</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="firstScreenContent">
+        <div class="spinningBrain">
+          <img class="spinningBrain" src="images/brainVideo-PLACEHOLDER.png" />
+        </div>
+        <div class="introduction">
+          <h1 class="title">Albers Lab</h1>
+          <p class="introParagraph">Combining chemical biology, genetic, and computational approaches in cultured human
+            neural cells and mouse models to elucidate mechanistic insights into disease pathogenesis.</p>
+          <a href="#start-scroll-position">
+            <button class="button startScroll">
+              <span class="button-content">Learn More</span>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="secondScreen">
-      <div class="secondScreenContainer">
+    <div class="secondScreen" id="start-scroll-position">
+      <div class="secondScreenContainer appearFullSection">
         <div class="neurons">
           <img class="neuronLeft" src="images/accurate-nueron-left.png" />
           <img class="neuronRight" src="images/accurate-nueron-right.png" />
         </div>
         <div class="about">
           <p class="aboutParagraph">In the Albers lab, we combine chemical biology, genetic, and computational
-            approaches
-            cultured human neural cells and mouse models to elucidate mechanistic insights into neurodegenerative
-            disease
-            pathogenesis. We validate these insights in human brain tissue and electronic health record databases. We
-            translate validated insights by developing biomarkers and therapeutics that advance precision medicine
-            approaches to neurologic disease.</p>
+            approaches cultured human neural cells and mouse models to elucidate mechanistic insights into
+            neurodegenerative disease pathogenesis. We validate these insights in human brain tissue and electronic
+            health record databases. We translate validated insights by developing biomarkers and therapeutics that
+            advance precision medicine approaches to neurologic disease.</p>
         </div>
       </div>
     </div>
 
     <div class="thirdScreen">
-      <div class="labBoxes">
+      <div class="labBoxes appearFullSection">
         <div class="LabBox">
           <img id="OFN_icon" src="images/OFN_icon.svg" />
-          <h3>Laboratory of Olfactory Neurotranslation</h3>
+          <h3 class="labBoxTitle">Laboratory of Olfactory Neurotranslation</h3>
           <button id="OFN_open_button" class="button openDescription">
             <span class="button-content"><img src="images/downArrow.svg"></span>
           </button>
           <div id="OFNDetails" class="descriptionOnClick">
             <div class="description">
-              <p>In the Laboratory of Olfactory Neurotranslation (LOON), inspired by mouse models of inflammatory
-                olfactory
-                dysfunction, we develop novel at home clinical smell tests to quantify olfactory function and develop
-                algorithms to predict neurodegenerative disease, such as Alzheimer’s disease, Dementia with Lewy Body,
-                and
-                Chronic Traumatic Encephalopathy, and accelerate recovery of smell function following COVID infections
-                and
-                Traumatic Brain Injury. These biomarkers can serve as early screening tools and provide primary or
-                secondary
-                outcomes in clinical trials of patients with these diseases.</p>
+              <p class="descriptionText">In the Laboratory of Olfactory Neurotranslation (LOON), inspired by mouse
+                models of inflammatory olfactory dysfunction, we develop novel at home clinical smell tests to quantify
+                olfactory function and develop algorithms to predict neurodegenerative disease, such as Alzheimer’s
+                disease, Dementia with Lewy Body, and Chronic Traumatic Encephalopathy, and accelerate recovery of smell
+                function following COVID infections and Traumatic Brain Injury. These biomarkers can serve as early
+                screening tools and provide primary or secondary outcomes in clinical trials of patients with these
+                diseases.</p>
               <button id="OFN_close_button" class="button closeDescription">
                 <span class="button-content">Close</span>
               </button>
@@ -106,25 +107,20 @@
         </div>
         <div class="LabBox">
           <img id="NTS_icon" src="images/NTS_icon.svg" />
-          <h3>Laboratory of Neurologic Therapeutic Science</h3>
+          <h3 class="labBoxTitle">Laboratory of Neurologic Therapeutic Science</h3>
           <button id="NTS_open_button" class="button openDescription">
             <span class="button-content"><img src="images/downArrow.svg"></span>
           </button>
           <div id="NTSDetails" class="descriptionOnClick">
             <div class="description">
-              <p>In the Laboratory of Neurologic Therapeutic Science (LONTS), we combine in vitro human neural cell
-                systems,
-                mouse lines, and autopsied human brains as model systems of disease with computational approaches
-                including
-                machine learning and multiplexed imaging with spatial transcriptomics to elucidate mechanisms of
-                neurodegeneration. We prosecute candidate drug targets and generate candidate biomarkers for validation
-                in
-                human clinical trials using systems pharmacology approaches of FDA-approved, experimental, and novel
-                drugs.
-                In
-                parallel, we emulate clinical trials in multiple electronic health record datasets to validate
-                FDA-approved
-                “hits” emerging from our laboratory and computational discovery efforts.</p>
+              <p class="descriptionText">In the Laboratory of Neurologic Therapeutic Science (LONTS), we combine in
+                vitro human neural cell systems, mouse lines, and autopsied human brains as model systems of disease
+                with computational approaches including machine learning and multiplexed imaging with spatial
+                transcriptomics to elucidate mechanisms of neurodegeneration. We prosecute candidate drug targets and
+                generate candidate biomarkers for validation in human clinical trials using systems pharmacology
+                approaches of FDA-approved, experimental, and novel drugs. In parallel, we emulate clinical trials in
+                multiple electronic health record datasets to validate FDA-approved “hits” emerging from our laboratory
+                and computational discovery efforts.</p>
               <button id="NTS_close_button" class="button closeDescription">
                 <span class="button-content">Close</span>
               </button>
@@ -134,7 +130,7 @@
       </div>
     </div>
 
-    <div class="fourthScreen">
+    <div class="fourthScreen appearFullSection">
       <h2>Neurodegenerative Disease Progression</h2>
       <div class="diagramFirstRow">
         <svg width="211" height="211" viewBox="0 0 211 211" fill="none" class="hoverSVG" id="healthyBrainHover">
@@ -271,9 +267,13 @@
           <svg width="174" height="62.5" viewBox="0 0 174 62.5" fill="none">
             <path d="M2 14.0001L174 14.0001" stroke="#FF2626" stroke-width="4" />
             <path d="M2 0.00012207L2 27.0001" stroke="#FF2626" stroke-width="4" />
-            <text class="diagramTextRed" x="87" y="40.5" text-anchor="middle" stroke-width="1px"
+            <text class="diagramTextRed" x="87" y="36.5" text-anchor="middle" stroke-width="1px"
               alignment-baseline="middle">
-              Therapeutic Intervention
+              Therapeutic
+            </text>
+            <text class="diagramTextRed" x="87" y="55.5" text-anchor="middle" stroke-width="1px"
+              alignment-baseline="middle">
+              Intervention
             </text>
           </svg>
         </div>
@@ -360,21 +360,23 @@
 
     </div>
 
-    <div class="fifthScreen">
+    <div class="fifthScreen appearFullSection">
       <div class="scrollSectionHeader projectsHeader">
         <div class="headerAndButton">
           <h2>Projects</h2>
-          <button class="learnMore">Learn More</button>
+          <button class="button">
+            <span class="button-content">Learn More</span>
+          </button>
         </div>
         <div class="arrowButtons">
           <div class="nav-left">
             <button class="leftArrow" id="projectLeftArrow">
-              <img src="images/leftArrow.svg" />
+              <img class="leftArrowImage" src="images/leftArrow.svg" />
             </button>
           </div>
           <div class="nav-right">
             <button class="rightArrow" id="projectRightArrow">
-              <img src="images/rightArrow.svg" />
+              <img class="leftArrowImage" src="images/rightArrow.svg" />
             </button>
           </div>
         </div>
@@ -399,8 +401,11 @@
             <p class="projectLabelText">Mouse Olfactory Bulb</p>
           </div>
         </div>
-        <div class="project">
-          <img src="/images/mouseOlfactoryBulb.jpg" width="372px" height="457px" />
+        <div class="projectVid">
+          <video class="vid" autoplay loop muted>
+            <source src="videos/dsRNA-mediatedDeathInDifferentiatedHumanNeuralCells.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div class="projectLabel">
             <p class="projectLabelText">dsRNA-mediated Death in Differentiated Human Neural Cells</p>
           </div>
@@ -411,22 +416,24 @@
     </div>
 
 
-    <div class="bottomSection">
+    <div class="bottomSection appearFullSection">
       <div class="sixthScreen">
         <div class="scrollSectionHeader eventHeader">
           <div class="headerAndButton">
             <h2>Events</h2>
-            <button class="learnMore">Meet the Team</button>
+            <button class="button">
+              <span class="button-content">Meet the Team</span>
+            </button>
           </div>
           <div class="arrowButtons">
             <div class="nav-left">
               <button id="teamLeftButton" class="leftArrowDark">
-                <img src="images/leftArrowDark.svg" />
+                <img class="leftArrowImage" src="images/leftArrowDark.svg" />
               </button>
             </div>
             <div class="nav-right">
               <button id="teamRightButton" class="rightArrowDark">
-                <img src="images/rightArrowDark.svg" />
+                <img class="rightArrowImage" src="images/rightArrowDark.svg" />
               </button>
             </div>
           </div>
@@ -434,27 +441,131 @@
 
         <div class="eventsSlider">
           <div class="event">
-            <img class="eventImage" src="/images/event1.png" height="536px" width="873px" />
+            <img class="eventImage" src="/images/events/event1.png" height="536px" width="873px" />
             <div class="eventLabel" height="536px" width="873px">
               <p class="eventLabelText">Albers Lab members posing in front of Harvard Medical School</p>
             </div>
           </div>
           <div class="event">
-            <img class="eventImage" src="/images/event2.png" height="536px" width="413px" />
+            <img class="eventImage" src="/images/events/event2.png" height="536px" width="413px" />
             <div class="eventLabel" height="536px" width="413px">
               <p class="eventLabelText">Alysa and Sasha presenting data for the Long COVID smell test in Chelsea, MA</p>
             </div>
           </div>
-          <div class="event" height="536px" width="873">
-            <img class="eventImage" src="/images/event3.png" height="536px" width="873" />
-            <div class="eventLabel">
+          <div class="event">
+            <img class="eventImage" src="/images/events/event3.png" height="536px" width="873px" />
+            <div class="eventLabel" height="536px" width="873px">
               <p class="eventLabelText">Laura presenting her poster at Keystone 2023</p>
             </div>
           </div>
           <div class="event">
-            <img class="eventImage" src="/images/event4.png" height="536px" width="777px" />
+            <img class="eventImage" src="/images/events/event4.png" height="536px" width="777px" />
             <div class="eventLabel" height="536px" width="777px">
               <p class="eventLabelText">Albers Lab members at MGH holiday party</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event5.png" height="536px" width="873px" />
+            <div class="eventLabel" height="536px" width="873px">
+              <p class="eventLabelText">Benoit presenting his poster at ACHEMS 2022</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event6.png" height="536px" width="413px" />
+            <div class="eventLabel" height="536px" width="413px">
+              <p class="eventLabelText">Alex and Laura enjoying some outdoor activities at Keystone 2023</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event7.jpeg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Albers Lab members on MGH rounds with Dr. Albers</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event8.jpeg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Laura mentoring peers at Harvard Medical School</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event9.jpeg" height="536px" width="413px" />
+            <div class="eventLabel" height="536px" width="413px">
+              <p class="eventLabelText">Benoit presenting at SAOM</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event10.png" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Shayda presenting at Harvard Medical School's Research Assistant Symposium 2023
+              </p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event11.png" height="536px" width="413px" />
+            <div class="eventLabel" height="536px" width="413px">
+              <p class="eventLabelText">Dr. Albers and Albers Lab alumni May 2023</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event12.jpeg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Dr. Albers, Laura, and Alysa at SFN 2022</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event13.jpeg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Albers Lab Party February 2023</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event14.jpeg" height="536px" width="873px" />
+            <div class="eventLabel" height="536px" width="873px">
+              <p class="eventLabelText">Albers Lab Party August 2022</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event15.jpeg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Dr. Albers, Laura, and Alysa at SFN dinner 2022</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event16.jpeg" height="536px" width="873px" />
+            <div class="eventLabel" height="536px" width="873px">
+              <p class="eventLabelText">Trupti presenting at LAW meeting at Charlestown Navy Yard</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event17.jpeg" height="536px" width="413px" />
+            <div class="eventLabel" height="536px" width="413px">
+              <p class="eventLabelText">Alysa and Daniela presenting a bilingual poster in English and Spanish at
+                Chelsea 2022</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event18.jpeg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Lab dinner in Charlestown Navy Yard Summer 2022</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event19.jpeg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Alysa leading recruitment for COVID-19 Smell Testing in 2023 in Puerto Rico</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event20.jpeg" height="536px" width="873px" />
+            <div class="eventLabel" height="536px" width="873px">
+              <p class="eventLabelText">Alysa presenting COVID-19 Smell Testing in 2023 in Puerto Rico</p>
+            </div>
+          </div>
+          <div class="event">
+            <img class="eventImage" src="/images/events/event21.jpg" height="536px" width="777px" />
+            <div class="eventLabel" height="536px" width="777px">
+              <p class="eventLabelText">Lab members taking the Charlestown Ferry 2023</p>
             </div>
           </div>
         </div>
@@ -468,19 +579,28 @@
           <div class="contactGrid">
             <div class="contactItem phone">
               <img class="contactIcon" src="/images/phoneIcon.svg" />
-              <p class="contactText">(617) 724 7401</p>
+              <a class="contactTextLink" target="_blank" href="tel:+16177247401">
+                <p class="contactText">(617) 724 7401</p>
+              </a>
             </div>
             <div class="contactItem email">
               <img class="contactIcon" src="/images/emailIcon.svg" />
-              <p class="contactText">albers.mark@mgh.harvard.edu</p>
+              <a target="_blank" class="contactTextLink" href="mailto:albers.mark@mgh.harvard.edu">
+                <p class="contactText">albers.mark@mgh.harvard.edu</p>
+              </a>
             </div>
             <div class="contactItem twitter">
               <img class="contactIcon" src="/images/twitterIcon.svg" />
-              <p class="contactText">TwitterUserName</p>
+              <a class="contactTextLink" target="_blank" href="https://twitter.com/AlbersLab">
+                <p class="contactText">Twitter</p>
+              </a>
             </div>
             <div class="contactItem address">
               <img class="contactIcon" src="/images/addressIcon.svg" />
-              <p class="contactText">114 16th Street, Suite 2003, Charlestown, MA 02129</p>
+              <a class="contactTextLink" target="_blank"
+                href="https://www.google.com/maps/place/114+16th+St+%232003,+Bunker+Hill,+MA+02129/@42.3793482,-71.0536479,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370f7f468f54f:0x72f6237ef1af5ea9!8m2!3d42.3793443!4d-71.051073?entry=ttu">
+                <p class="contactText">114 16th Street, Suite 2003, Charlestown, MA 02129</p>
+              </a>
             </div>
           </div>
           <div class="footerNavContainer">

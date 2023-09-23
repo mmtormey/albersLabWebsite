@@ -111,14 +111,12 @@ function css(element, style) {
 
 $(document).ready(function () {
   var projects = $('.project')
+  var projectVids = $('.projectVid')
   console.log(projects)
   // var projects = document.getElementsByClassName("project")
 
   for (const project of projects) {
     project.addEventListener('mouseover', () => {
-      console.log("hovered")
-      console.log(project.children[0])
-      console.log(project.children[1])
       var projectImage = project.children[0];
       css(projectImage, {
         'transform': 'scale(1.3)',
@@ -127,7 +125,6 @@ $(document).ready(function () {
     })
 
     project.addEventListener('mouseout', () => {
-      console.log("done hovering")
       var projectImage = project.children[0];
       css(projectImage, {
         'transform': 'scale(1)',
@@ -135,5 +132,54 @@ $(document).ready(function () {
       });
     })
   }
+
+  // for (const project of projectVids) {
+  //   project.addEventListener('mouseover', () => {
+  //     var projectVideo = project.children[0];
+  //     css(projectVideo, {
+  //       'transform': 'scale(1.3)',
+  //       'transform-origin': '50% 50%'
+  //     });
+  //   })
+
+  //   project.addEventListener('mouseout', () => {
+  //     var projectVideo = project.children[0];
+  //     css(projectVideo, {
+  //       'transform': 'scale(1)',
+  //       'transform-origin': '50% 50%'
+  //     });
+  //   })
+  // }
 })
 
+//
+//
+//
+// appear on scroll
+
+
+function appear() {
+  const fullScreenSections = document.querySelectorAll('.appearFullSection');
+
+  const observerFull = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observerFull.unobserve(entry.target);
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  }, { rootMargin: "-40% 0px -40% 0px" });
+
+  fullScreenSections.forEach(section => {
+    console.log(observerFull.observe(section));
+    observerFull.observe(section);
+  });
+}
+
+
+// Call the parallax function on scroll
+window.addEventListener('scroll', function () {
+  appear();
+});
