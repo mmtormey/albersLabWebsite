@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albers Lab Projects</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&family=Inter:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</head>
+
+<body>
+  <div class="projectsWhole">
+    <nav class="homeNav">
+      <div class="logoContainer">
+        <a class="logo" href="index.html">
+          <p>LOGO</p>
+        </a>
+      </div>
+      <div class="navContainer">
+        <div class="navPagesContainer">
+          <a href="#" class="navLink">
+            <p class="navItem">Team</p>
+          </a>
+          <a href="projects.html" class="navLink">
+            <p class="navItem">Projects</p>
+          </a>
+          <a href="#" class="navLink">
+            <p class="navItem">Media</p>
+          </a>
+          <a href="#" class="navLink">
+            <p class="navItem">Clinic</p>
+          </a>
+        </div>
+        <div class="navJoinContainer">
+          <a href="#" class="joinLink">
+            <p class="joinUs">Join Us</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="projectIntroSection">
+      <div class="introduction">
+        <h1 class="title">Projects</h1>
+      </div>
+      <div class="projectSpinner">
+        <img class="projectSpinner" src="images/projectSpinner-PLACEHOLDER.png" />
+      </div>
+    </div>
+
+    <div class="projectTypeFilters">
+      <button class="filter activeFilter" onclick="toggleProject(this, labProjects)">
+        <p class="filterText">Laboratory</p>
+        <img src="images/Mouse.svg" height="19.554px" width="41px" />
+      </button>
+      <button class="filter inactiveFilter" onclick="toggleProject(this, compProjects)">
+        <p class="filterText">Computational</p>
+        <img src="images/computor.svg" height="22.325px" width="23.498px" />
+      </button>
+      <button class="filter inactiveFilter" onclick="toggleProject(this, clinProjects)">
+        <p class="filterText">Clinical</p>
+        <img src="images/Human.svg" height="21.602px" width="18.742px" />
+      </button>
+    </div>
+
+    <div class="projects" id="labProjects">
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Lab1.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Laboratory</p>
+              <p class="projectBlurb">Elucidating Neuron-inflammation: Cytoplasmic dsRNA as a Damage Associated
+                Molecular Pattern in Neurodegenerative Disease</p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Laboratory</p>
+                <p class="projectDetailsBlurb">Elucidating Neuron-inflammation: Cytoplasmic dsRNA as a Damage Associated
+                  Molecular Pattern in Neurodegenerative Disease</p>
+              </div>
+              <p class="projectDescription">The Albers lab described the spatial coincidence of cytoplasmic dsRNA with
+                TDP-43 inclusions in brains with ALS and FTD pathologies, as well as Alzheimer's disease pathologies. We
+                are isolating, sequencing, and mapping cytoplasmic dsRNA isolated from AD and FTD/ALS brains and
+                characterizing neuroinflammation, cdsRNA, TDP-43 inclusions in iPSC-derived human cortical neurons and
+                mouse models of TDP-43 pathology.</p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Lab2.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Laboratory</p>
+              <p class="projectBlurb">Drug Repurposing in Alzheimer's disease through Systems Pharmacology Approaches
+                (DRIAD-SP)</p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Laboratory</p>
+                <p class="projectDetailsBlurb">Drug Repurposing in Alzheimer's disease through Systems Pharmacology
+                  Approaches (DRIAD-SP)</p>
+              </div>
+              <p class="projectDescription">In this project we seek to identify novel drug repurposing candidates by
+                refining our machine learning predictor of Alzheimer's disease progression based on human brain gene
+                expression, proteomic and metabolomic profiles, by conducting systems pharmacological analyses of FDA
+                approved drugs.</p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Lab3.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Laboratory</p>
+              <p class="projectBlurb">Neuroinflammatory Mechanisms in Long COVID: Mouse Models of Neurodegenerative
+                Diseases and Long COVID</p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Laboratory</p>
+                <p class="projectDetailsBlurb">Neuroinflammatory Mechanisms in Long COVID: Mouse Models of
+                  Neurodegenerative
+                  Diseases and Long COVID</p>
+              </div>
+              <p class="projectDescription">In this project, we seek to elucidate mechanisms of DAMP-mediated
+                neuroinflammation and propagated neuronal death in mouse models where DAMPS are generated in specific
+                cell types, such as olfactory neurons. Multi-disciplinary techniques, from molecular biology to
+                behavioral studies are employed to fully characterize these animal models.</p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Lab4.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Laboratory</p>
+              <p class="projectBlurb">Drug Development: Brain-Penetrant Kinase Inhibitors Targeting Alzheimer's and
+                Related Dementias and ALS</p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Laboratory</p>
+                <p class="projectDetailsBlurb">Drug Development: Brain-Penetrant Kinase Inhibitors Targeting Alzheimer's
+                  and
+                  Related Dementias and ALS</p>
+              </div>
+              <p class="projectDescription">The major goal of this project to identify and validate drug-like molecules
+                that bind selectively to a novel kinase that rescues neuronal death. We test validated kinase inhibitors
+                to rescue cdsRNA-mediated neural cell death. We also validate candidate off target effects by generating
+                CRISPR- Cas9 knockouts in human neural cells.</p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects hidden" id="compProjects">
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Comp1.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Computational</p>
+              <p class="projectBlurb">Causal Inference Approaches to Emulating Clinical Trials in the EHR (DRIAD-EHR)
+              </p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Computational</p>
+                <p class="projectDetailsBlurb">Causal Inference Approaches to Emulating Clinical Trials in the EHR
+                  (DRIAD-EHR)
+                </p>
+              </div>
+              <p class="projectDescription">In this project, we continue to build and refine a pipeline to evaluate
+                nominated drugs in the electronic medical records from the US and the UK to slow progression towards a
+                diagnosis of Alzheimer's disease or dementia or to slow disease progression from initial diagnosis to
+                moderate stage dementia. We incorporate principles of federated learning to partner EHRs to preserve
+                privacy while incorporating the power and diversity of EHR data sets from across the US and globally.
+              </p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects hidden" id="clinProjects">
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Clin1.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Clinical</p>
+              <p class="projectBlurb">NADALS Basket Trial</p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Clinical</p>
+                <p class="projectDetailsBlurb">NADALS Basket Trial</p>
+              </div>
+              <p class="projectDescription">In this Phase IIB, proof-of-concept clinical trial, we seek to ascertain
+                whether baricitinib 2 mg per day and 4 mg per day reaches therapeutic levels in the CSF and whether it
+                suppresses established inflammatory biomarkers and neuronal death biomarkers in the CSF and plasma. All
+                participants recruited into this trial will have evidence of abnormal type I interferon signaling in
+                their CSF at baseline.
+                <br>We analyze the relationship between changes in inflammatory and neurodegenerative biomarkers in the
+                CSF
+                of the 10 enrolled patients for each disease. We also seek to identify candidate biomarkers for response
+                to baricitinib through analyzing unbiased proteomics data from the CSF and immune cell profiling of
+                peripheral white blood cells patients before and after treatment of baricitinib.
+              </p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Clin2.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Clinical</p>
+              <p class="projectBlurb">Longitudinal At Home Smell Testing to Detect Infection by SARS-CoV-2</p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Clinical</p>
+                <p class="projectDetailsBlurb">Longitudinal At Home Smell Testing to Detect Infection by SARS-CoV-2</p>
+              </div>
+              <p class="projectDescription">We have generated and deployed an app with 6 different odor delivery cards
+                and to test this longitudinal smell test in hospital and university settings with a focus on Long COVID.
+              </p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="projectBox box">
+          <img class="projectImage" src="images/projects/Clin3.png" width="640px" height="543px" />
+          <div class="projectDarkGradient">
+            <div class="projectTitle">
+              <p class="projectTypeText">Clinical</p>
+              <p class="projectBlurb">Digital Accessible Remote Olfactory Mediated Health Assessments for Preclinical AD
+                and Other Neurodegenerative Diseases</p>
+              <button class="projectDetailButton" onclick="closeProjectDetails(this)">
+                <p class="projectDetailsButtonContent">Learn More</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetailsBox box hidden">
+          <div class="projectDetails">
+            <div class="projectDetailsContent">
+              <div class="projectTitleDetails">
+                <p class="projectTypeTextDetails">Clinical</p>
+                <p class="projectDetailsBlurb">Digital Accessible Remote Olfactory Mediated Health Assessments for
+                  Preclinical
+                  AD and Other Neurodegenerative Diseases</p>
+              </div>
+              <p class="projectDescription">We have generated and deployed the AROMHA Brain Health Smell Battery for at
+                home use and to validate it in a community setting in patients with aging, subjective cognitive decline,
+                mild cognitive impairment, Alzheimer's disease, Lewy Body Dementia, Traumatic Brain Injury, Chronic
+                Traumatic Encephalopathy, and Parkinson's disease. It is hypothesized that olfactory performance on the
+                AROMHA Brain Health Smell Battery will predict structural brain health measured by high-resolution
+                magnetic resonance imaging (MRI)</p>
+            </div>
+            <button class="projectCloseDetailsButton" onclick="closeProjectDetails(this)">
+              <p class="projectCloseDetailsButtonContent">Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottomSectionProjects">
+      <div class="footer">
+        <a class="logo" href="index.html">
+          <p>LOGO</p>
+        </a>
+        <div class="footerRow">
+          <div class="contactGrid">
+            <div class="contactItem phone">
+              <img class="contactIcon" src="/images/phoneIcon.svg" />
+              <a class="contactTextLink" target="_blank" href="tel:+16177247401">
+                <p class="contactText">(617) 724 7401</p>
+              </a>
+            </div>
+            <div class="contactItem email">
+              <img class="contactIcon" src="/images/emailIcon.svg" />
+              <a target="_blank" class="contactTextLink" href="mailto:albers.mark@mgh.harvard.edu">
+                <p class="contactText">albers.mark@mgh.harvard.edu</p>
+              </a>
+            </div>
+            <div class="contactItem twitter">
+              <img class="contactIcon" src="/images/twitterIcon.svg" />
+              <a class="contactTextLink" target="_blank" href="https://twitter.com/AlbersLab">
+                <p class="contactText">Twitter</p>
+              </a>
+            </div>
+            <div class="contactItem address">
+              <img class="contactIcon" src="/images/addressIcon.svg" />
+              <a class="contactTextLink" target="_blank"
+                href="https://www.google.com/maps/place/114+16th+St+%232003,+Bunker+Hill,+MA+02129/@42.3793482,-71.0536479,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370f7f468f54f:0x72f6237ef1af5ea9!8m2!3d42.3793443!4d-71.051073?entry=ttu">
+                <p class="contactText">114 16th Street, Suite 2003, Charlestown, MA 02129</p>
+              </a>
+            </div>
+          </div>
+          <div class="footerNavContainer">
+            <div class="footerNavPagesContainer">
+              <a href="#" class="footerNavLink">
+                <p class="footerNavItem">Team</p>
+              </a>
+              <a href="projects.html" class="footerNavLink">
+                <p class="footerNavItem">Projects</p>
+              </a>
+              <a href="#" class="footerNavLink">
+                <p class="footerNavItem">Media</p>
+              </a>
+              <a href="#" class="footerNavLink">
+                <p class="footerNavItem">Clinic</p>
+              </a>
+            </div>
+            <div class="footerNavJoinContainer">
+              <a href="#" class="footerJoinLink">
+                <p class="footerJoinUs">Join Us</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footerLine">
+          <hr class="line" />
+        </div>
+        <div class="signature">
+          <p>Website Designed By </p>
+          <p class="name">Alyssa DeFilippis</p>
+          <p> & Developed by </p>
+          <p class="name">Megan Tormey</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/projects.js" defer></script>
+</body>
+
+</html>

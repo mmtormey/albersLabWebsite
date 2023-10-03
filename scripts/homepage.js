@@ -78,8 +78,8 @@ $(document).ready(function () {
     dots: false,
     nextArrow: document.getElementById('teamRightButton'),
     prevArrow: document.getElementById('teamLeftButton'),
-    // autoplay: true,
-    // autoplaySpeed: 2000
+    autoplay: true,
+    autoplaySpeed: 2000
   });
 
   $(".projectsScroller").slick({
@@ -92,8 +92,8 @@ $(document).ready(function () {
     dots: false,
     nextArrow: document.getElementById('projectRightArrow'),
     prevArrow: document.getElementById('projectLeftArrow'),
-    // autoplay: true,
-    // autoplaySpeed: 2000
+    autoplay: true,
+    autoplaySpeed: 2000
   });
 
 });
