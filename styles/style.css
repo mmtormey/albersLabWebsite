@@ -472,6 +472,7 @@ H2 {
   font-style: normal;
   font-weight: 700;
   line-height: 48.8px;
+  margin: 0;
 }
 
 .projectsScroller {
@@ -1062,4 +1063,260 @@ H2 {
   border-radius: 0;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+
+/* TEAM PAGE */
+
+.teamWhole {
+  background-color: #000000;
+}
+
+.teamIntro {
+  background: linear-gradient(90deg, #000 0.05%, rgba(0, 0, 0, 0.00) 9.92%), linear-gradient(270deg, #000 0.37%, rgba(0, 0, 0, 0.00) 9.56%), linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 12.98%), linear-gradient(109deg, rgba(0, 0, 0, 0.00) 71.27%, #000 98.02%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 84.55%, #000 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.80) 48.41%, rgba(0, 0, 0, 0.00) 100.67%), url(/images/team/teamHeaderBackground.png);
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.teamImgContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.teamImgContainer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.teamIntroduction {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+}
+
+.anchorLink {
+  text-decoration: none;
+}
+
+.teamAnchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.teamAnchor:hover {
+  background-color: white;
+}
+
+.teamAnchorText {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  padding: 16px 32px;
+}
+
+.teamAnchorText:hover {
+  color: black;
+}
+
+.anchorRow {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.anchorColumns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  opacity: .8;
+}
+
+.allPeople {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0;
+}
+
+.levelSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.peopleInSection {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+.levelHeader {
+  align-self: stretch;
+}
+
+.personSection {
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+}
+
+.blurb {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blurbText {
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%;
+  margin: 0;
+}
+
+.headshot {
+  position: relative;
+  color: white;
+  height: 419px;
+}
+
+.headshotImage {
+  object-fit: cover;
+}
+
+.headshotLabel {
+  position: absolute;
+  font-family: Epilogue;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 70.09%, rgba(0, 0, 0, 0.80) 85.81%);
+  bottom: 0px;
+  left: 0px;
+}
+
+.headshotLabelText {
+  bottom: -8px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+.principal {
+  background: #000000;
+}
+
+.principalButton {
+  background: #1E2560;
+}
+
+.collaboratingFaculty {
+  background: rgba(30, 37, 96, 0.25);
+}
+
+.postdoctoralResearchFellows {
+  background: rgba(30, 37, 96, 0.38);
+}
+
+.collaboratingPhDCandidates {
+  background: rgba(30, 37, 96, 0.50);
+}
+
+.collaboratingMastersStudents {
+  background: rgba(30, 37, 96, 0.63);
+}
+
+.dataScientists {
+  background: rgba(30, 37, 96, 0.75);
+}
+
+.dataScientistButton {
+  background: #070A29;
+}
+
+.researchTechniciansAndClinicalResearchCoordinators {
+  background: rgba(30, 37, 96, 0.88);
+}
+
+.researchTechniciansAndClinicalResearchCoordinatorsButton {
+  background: #070A29;
+}
+
+.interns {
+  background: #1E2560;
+}
+
+.internButton {
+  background: #070A29;
+}
+
+.alumniPeopleInSection {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: -webkit-fill-available;
+}
+
+h4 {
+  font-family: Epilogue;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%;
+  margin: 0;
+}
+
+.alumniPersonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameAndSchool {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.alumniSchool {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%;
+  opacity: 0.6;
+}
+
+.alumniButton {
+  background: #1E2560;
+  padding: 16px 32px;
 }
