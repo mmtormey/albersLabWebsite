@@ -1,4 +1,4 @@
-/* Whole Site / Homepage */
+/* HOMEPAGE */
 
 html {
   background-color: black;
@@ -120,10 +120,10 @@ body {
 .firstScreenContent {
   display: flex;
   flex-direction: row;
-  gap: 92px;
-  margin-left: 92px;
-  margin-top: 36px;
+  justify-content: space-between;
   align-items: center;
+  width: 80%;
+  margin: 100px auto 0 auto;
 }
 
 .introduction {
@@ -797,7 +797,7 @@ H2 {
 }
 
 
-/* Projects Page */
+/* PROJECT PAGE */
 
 .projectsWhole {
   background: url(../images/projectsBackground.png) no-repeat;
